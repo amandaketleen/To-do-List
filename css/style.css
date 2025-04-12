@@ -1,0 +1,149 @@
+
+body {
+    background-color: #dac5fa;
+    background-image:linear-gradient(rgba(211, 200, 228, 0.7), rgba(218, 197, 250, 0.7)),  url(/src/flores.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .contador {
+    text-align: center;
+  }
+  
+ 
+  #lista-de-compras {
+    background-color: #c1afc5;
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 30px #4e1658;
+    width: 350px;
+    max-width: 90%;
+    list-style: none;
+
+    max-height: 500px; 
+    overflow-y: auto; /* Adiciona rolagem se os itens excederem a altura */
+ 
+    margin: 0 auto; /* Centraliza a lista */
+  }
+  
+
+  #lista-de-compras h2 {
+    text-align: center;
+    color: #1f0061;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Cada item da lista */
+  #opção {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    background-color: #f3edff;
+    border-radius: 8px;
+    transition: 0.2s;
+    
+  }
+  
+  #opção:hover {
+    background-color: #e7dfff;
+  }
+  
+
+  #opção input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+
+  }
+
+  #opção input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #888888;
+    opacity: 0.9;
+  }
+  
+
+  #opção span {
+    flex-grow: 1;
+    color: #4a4a4a;
+    font-size: 15px;
+  }
+  
+  /* Botão de deletar */
+  #opção button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+  
+  #opção button:hover {
+    transform: scale(1.2);
+  }
+  
+
+  #novo-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px dashed #b39ddb;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f3e5f5;
+  }
+  
+  #novo-item {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ce93d8;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #btn-adicionar {
+    background-color: #ce93d8;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #btn-adicionar:hover {
+    background-color: #ba68c8;
+  }
+  
+
+  #lista-de-compras::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #lista-de-compras::-webkit-scrollbar-track {
+    background: #f5c2fa; 
+    border-radius: 10px;
+  }
+  
+  #lista-de-compras::-webkit-scrollbar-thumb {
+    background: #7d3880; 
+    border-radius: 10px;
+  }
+  
+  #lista-de-compras::-webkit-scrollbar-thumb:hover {
+    background: #b16bbe; 
+  }
+  

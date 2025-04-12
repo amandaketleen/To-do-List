@@ -1,0 +1,34 @@
+/* Responsividade */
+@media (max-width: 500px) {
+    #lista-de-compras {
+      width: 70%;
+      padding: 20px;
+    }
+  
+    #lista-de-compras h2 {
+      font-size: 20px;
+    }
+  
+    #opção {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    #opção span {
+      font-size: 12px;
+      margin: 5px 0;
+      flex: 1 1 70%;
+    }
+  
+    #opção input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  
+    #opção button {
+      font-size: 13px;
+      margin-left: 10px;
+    }
+  }
+  
+  
