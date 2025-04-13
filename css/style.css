@@ -64,12 +64,14 @@ body {
   #opção input[type="checkbox"] {
     margin-right: 10px;
     cursor: pointer;
+    accent-color: #5f3b7e
 
   }
 
   #opção input[type="checkbox"]:checked + span {
     text-decoration: line-through;
     color: #888888;
+    
     opacity: 0.9;
   }
   
