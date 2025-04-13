@@ -1,83 +1,37 @@
 /* Responsividade */
-@media (max-width: 768px) {
-  /* Ajustes para o fundo da página */
+@media (max-width: 768px) { 
   body {
       background-image: linear-gradient(rgba(211, 200, 228, 0.7), rgba(218, 197, 250, 0.7)), url('../src/flores.png');
-      background-size: cover;        /* A imagem cobre toda a tela */
-      background-position: center;   /* A imagem é centralizada */
-      background-attachment: scroll; /* No celular, a imagem rola com o conteúdo */
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;  /* No celular, a imagem vai rolar junto com o conteúdo */
   }
 
-  /* Ajustes para a lista */
-  ul {
-      width: 100%;                    /* A lista ocupa 100% da largura disponível */
-      padding: 0 10px;                /* Espaçamento lateral */
-      box-sizing: border-box;         /* Garante que padding e bordas sejam contados na largura */
+  #lista-de-compras {
+    width: 70%;
+    padding: 30px;
   }
 
-  /* Ajustes para o input e o botão */
-  input, button {
-      width: 100%;                    /* Garante que o input e o botão ocupem 100% da largura */
-      margin: 5px 0;                  /* Espaçamento entre os elementos */
-      box-sizing: border-box;         /* Garante que padding e bordas sejam contados na largura */
+  #novo-item {
+ width: 5px;
+ margin-right: 10%;
+  
   }
 
-  /* Ajustes para a lista de itens */
-  li {
-      display: flex;                  /* Alinha os itens com flexbox */
-      justify-content: space-between; /* Espaço entre o texto e a lixeira */
-      align-items: center;            /* Alinha verticalmente */
-      padding: 10px;                  /* Espaçamento interno */
-      margin: 5px 0;                  /* Margem entre os itens */
-      background-color: #f9f9f9;     /* Cor de fundo */
-      border: 1px solid #ccc;        /* Borda dos itens */
-      border-radius: 5px;             /* Bordas arredondadas */
-      word-wrap: break-word;          /* Quebra o texto longo para evitar ultrapassar */
-  }
-
-  /* Ajustes para o ícone da lixeira */
-  li .delete-btn {
-      font-size: 18px;                /* Tamanho maior para o ícone da lixeira */
-      cursor: pointer;               /* Cursor de pointer para indicar interatividade */
-  }
-
-  /* Ajustes para a fonte no celular */
-  li {
-      font-size: 14px;                /* Reduz o tamanho da fonte para telas menores */
+  #btn-adicionar {
+   width: 35%;
+   font-size: 12px;
+   
+  
   }
 }
 
+#novo-item::placeholder{
+  font-size: 14px;
+}
 
-/*@media (max-width: 500px) {
-    #lista-de-compras {
-      width: 70%;
-      padding: 20px;
-    }
-  
-    #lista-de-compras h2 {
-      font-size: 20px;
-    }
-  
-    #opção {
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 10px;
-    }
-  
-    #opção span {
-      font-size: 12px;
-      margin: 5px 0;
-      flex: 1 1 70%;
-    }
-  
-    #opção input[type="checkbox"] {
-      margin-right: 10px;
-    }
-  
-    #opção button {
-      font-size: 13px;
-      margin-left: 10px;
-    }
-  }*/
-  
-  
+
+
+
+
+
