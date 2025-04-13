@@ -1,5 +1,14 @@
 /* Responsividade */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+  body {
+      background-image: linear-gradient(rgba(211, 200, 228, 0.7), rgba(218, 197, 250, 0.7)), url('../src/flores.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;  /* No celular, a imagem vai rolar junto com o conteúdo */
+  }
+}
+
+/*@media (max-width: 500px) {
     #lista-de-compras {
       width: 70%;
       padding: 20px;
@@ -29,6 +38,6 @@
       font-size: 13px;
       margin-left: 10px;
     }
-  }
+  }*/
   
   

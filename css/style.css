@@ -1,9 +1,10 @@
 
 body {
     background-color: #dac5fa;
-    background-image:linear-gradient(rgba(211, 200, 228, 0.7), rgba(218, 197, 250, 0.7)),  url(/src/flores.png);
+    background-image:linear-gradient(rgba(211, 200, 228, 0.7), rgba(218, 197, 250, 0.7)),  url('../src/flores.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
